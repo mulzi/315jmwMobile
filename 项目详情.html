@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+
+    <title>项目详情</title>
+    <!--轮播插件-->
+    <link href="css/swiper.css" rel="stylesheet">
+    <script src="js/swiper.js"></script>
+    <!--轮播插件-->
+    <link rel="stylesheet" href="./css/mui.css">
+    <link href="./css/indexTwo.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+    <link href="./css/iconfont.css" rel="stylesheet">
+    <script src="./js/jquery-1.10.2.js"></script>
+    <script src="./js/lazy.js"></script>
+
+    <!--分辨率js-->
+    <script src="js/amfe-flexible/index.js"></script>
+    <!--分辨率js-->
+
+    <script src="./js/mui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+
+</head>
+
+<body>
+
+
+<div id="header" class="mui-bar mui-bar-nav mui-bar-transparent" data-top='0' data-offset='150' data-duration='16'
+     data-scrollby=".mui-scroll-wrapper">
+    <h1 :class="{'pro-header-title':proHeaderShow}" class="mui-title ">项目名称</h1>
+    <a :class="{'a-boxShower':proHeaderShow}" class="mui-icon mui-icon-bars mui-pull-right"></a>
+    <a :class="{'a-boxShower':proHeaderShow}" class="mui-icon mui-icon-left-nav mui-pull-left"></a>
+
+</div>
+
+<!-- 轮播 -->
+<div class="projectBanner">
+    <div class="swiper-container" id="banner">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+
+                <a href="">
+
+                    <img src="./img/zil_17.png" alt="">
+                </a>
+
+            </div>
+            <div class="swiper-slide">
+                <a href="">
+
+                    <img src="./img/zil_09.png" alt=""></a>
+            </div>
+
+            <div class="swiper-slide">
+                <a href="">
+
+                    <img src="./img/zil_13.png" alt=""></a>
+
+            </div>
+        </div>
+       <!-- 如果需要分页器-->
+        <div class="project-swiper"></div>
+
+        <!-- 如果需要导航按钮 -->
+        <!--<div class="swiper-button-prev"></div>-->
+        <!--<div class="swiper-button-next"></div>-->
+
+
+   </div>
+    <div class="mvBox">
+        <video autoplay="autoplay" controls poster="./img/zil_13.png" >
+            <source src="./img/study.mp4">
+        </video>
+    </div>
+</div>
+<!-- 轮播 -->
+
+<!-- 标题简介 -->
+<div class="projectTitleBox">
+
+    <div class="titName">
+        <div class="left">
+            重庆小肥猪火锅小火锅
+        </div>
+        <div class="right">
+
+            <span>
+                    认证3年
+                </span>
+            <span>
+                    vip2
+                </span>
+        </div>
+
+
+    </div>
+    <div class="comName">
+        公司名称：重庆美食投资管理有限公司
+    </div>
+    <div class="money">
+        <div class="left">
+            投资金额：<span>5-50万</span>
+        </div>
+        <div class="right">
+            <span class="mui-icon mui-icon mui-icon-map"></span>
+            <em>重庆 重庆市</em>
+        </div>
+    </div>
+
+    <div class="product">
+             <span>
+                 主营产品：
+             </span>
+        <div class="right">
+            <em>
+                烧烤
+            </em>
+            <em>
+                铁板烧
+            </em>
+            <em>中餐</em>
+            <em>
+                烧烤
+            </em>
+            <em>
+                铁板烧
+            </em>
+            <em>中餐</em>
+            <em>
+                烧烤
+            </em>
+            <em>
+                铁板烧
+            </em>
+            <em>中餐</em>
+        </div>
+
+
+    </div>
+    <div class="label">
+        <span>品牌标签：</span>
+        <div class="right">
+            <em>味道正宗</em>
+            <em>口碑好</em>
+            <em>区域保护</em>
+            <em>信誉好</em>
+            <em>口碑好</em>
+            <em>区域保护</em>
+            <em>信誉好</em>
+        </div>
+
+    </div>
+
+</div>
+<!-- 标题简介 -->
+<!--企业证件-->
+<div class="companyBooks">
+
+    <a href="企业资质证件.html">
+        <div class="left">
+            <img src="img/GoogleChrome.png" alt="">
+
+            <em>
+                企业资质认证：三证齐全
+            </em>
+        </div>
+        <div class="right">
+            查看证件>
+        </div>
+    </a>
+
+</div>
+<!--企业证件-->
+
+
+<div class="ProjectDetails">
+
+    <div class="project_topMenu">
+        <ul id="pro_ML">
+            <li class="on">
+                    <span>
+                        品牌海报
+                    </span>
+            </li>
+            <li>
+                    <span>
+                        品牌详情
+                    </span>
+            </li>
+            <li>
+                    <span>
+                        经营实况
+                    </span>
+            </li>
+        </ul>
+    </div>
+    <div class="project_bottomImg">
+        <dl style="display: block" class="one">
+            <div class="img_list">
+                <img class="lazy" width="640" height="100%" data-original="./img/zil_13.png" alt="">
+                <img class="lazy" width="640" height="100%" data-original="./img/zil_13.png" alt="">
+                <img class="lazy" width="640" height="100%" data-original="./img/zil_13.png" alt="">
+                <img class="lazy" width="640" height="100%" data-original="./img/zil_13.png" alt="">
+                <img class="lazy" width="640" height="100%" data-original="./img/zil_13.png" alt="">
+                <img class="lazy" width="640" height="100%" data-original="./img/zil_13.png" alt="">
+                <img class="lazy" width="640" height="100%" data-original="./img/zil_13.png" alt="">
+                <img class="lazy" width="640" height="100%" data-original="./img/zil_13.png" alt="">
+                <img class="lazy" width="640" height="100%" data-original="./img/zil_13.png" alt="">
+                <img class="lazy" width="640" height="100%" data-original="./img/zil_13.png" alt="">
+
+            </div>
+            <div class="message_body">
+                <div class="top_title">
+                    <i class="iconfont icon-liuyanfill"></i>
+                    <span>在线留言</span>
+                </div>
+                <div class="bottom_form">
+                    <form action="">
+                        <div class="input_one">
+                            <span>姓名：</span>
+                            <input type="text " value="请输入您的姓名" onfocus="if(this.value =='请输入您的姓名')this.value=''"
+                                   onblur="if(this.value==''){ this.value ='请输入您的姓名'} ">
+                        </div>
+                        <div class="input_one">
+                            <span>电话：</span>
+                            <input type="text " value="请输入您的电话" onfocus="if(this.value =='请输入您的电话')this.value=''"
+                                   onblur="if(this.value==''){ this.value ='请输入您的电话'} ">
+                        </div>
+                        <div class="input_one">
+                            <span>留言：</span>
+                            <textarea placeholder="对此项目感兴趣，请给我们留言"></textarea>
+                        </div>
+
+                        <div class="input_two">
+                            <input type="checkbox" checked>
+                            <span>意向品牌查看（我已同意成为聚商机会员，并遵守聚商机会员条款）</span>
+                        </div>
+                        <div class="input_two">
+                            <input type="checkbox" checked>
+                            <span>同类品牌商查看（我已同意成为聚商机会员，并遵守聚商机会员条款）</span>
+                        </div>
+                        <div class="sub">
+                            <input type="submit" name="" id="" value="提交">
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </dl>
+        <dl class="two">
+            <div class="two_massage">
+                <form action="">
+                    <div class="form">
+                        <div class="left_input">
+                            <input type="text" placeholder="请输入您的手机号码（我们严格保密）">
+                        </div>
+                        <div class="sub">
+
+                            <input type="text" value="提交">
+                        </div>
+                    </div>
+
+                    <div class="protocol ">
+                        <input name="checkbox" type="checkbox" checked>
+                        <em> 我已阅读并同意 <a href="聚商机加盟网服务条款.html">《聚商机加盟网服务条款》</a></em>
+
+                    </div>
+                </form>
+            </div>
+            <div class="pro_aT">
+                <div class="modul_one">
+                    <div class="top_title">
+                        <span>加盟详情</span>
+                    </div>
+                    <div class="active">
+                        <p>
+                            对于投资创业者都希望控制成本、增加蛋糕店利润
+                            ，但聚商机网小编认为当掌握成本之时也就掌握了这个项目在市场上的发展
+                            。不少投资创业者在开店之后对于如何控制成本，以及提高蛋糕店利润十分困惑。
+                            到底蛋糕加盟店如何从三大战略上有效的增加蛋糕店利润?下面聚商机网小编就此详细介绍。
+                        </p>
+                        <p>
+                            <img src="./img/zil_09.png" alt="">
+                        </p>
+                        <p>
+                            对于投资创业者都希望控制成本、增加蛋糕店利润
+                            ，但聚商机网小编认为当掌握成本之时也就掌握了这个项目在市场上的发展
+                            。不少投资创业者在开店之后对于如何控制成本，以及提高蛋糕店利润十分困惑。
+                            到底蛋糕加盟店如何从三大战略上有效的增加蛋糕店利润?下面聚商机网小编就此详细介绍。
+                        </p>
+                        <p>
+                            <img src="./img/zil_09.png" alt="">
+                        </p>
+                    </div>
+
+                </div>
+                <div class="modul_one">
+                    <div class="top_title">
+                        <span>加盟优势</span>
+                    </div>
+                    <div class="active">
+                        <p>
+                            对于投资创业者都希望控制成本、增加蛋糕店利润
+                            ，但聚商机网小编认为当掌握成本之时也就掌握了这个项目在市场上的发展
+                            。不少投资创业者在开店之后对于如何控制成本，以及提高蛋糕店利润十分困惑。
+                            到底蛋糕加盟店如何从三大战略上有效的增加蛋糕店利润?下面聚商机网小编就此详细介绍。
+                        </p>
+                        <p>
+                            <img src="./img/zil_09.png" alt="">
+                        </p>
+                        <p>
+                            对于投资创业者都希望控制成本、增加蛋糕店利润
+                            ，但聚商机网小编认为当掌握成本之时也就掌握了这个项目在市场上的发展
+                            。不少投资创业者在开店之后对于如何控制成本，以及提高蛋糕店利润十分困惑。
+                            到底蛋糕加盟店如何从三大战略上有效的增加蛋糕店利润?下面聚商机网小编就此详细介绍。
+                        </p>
+                        <p>
+                            <img src="./img/zil_09.png" alt="">
+                        </p>
+                    </div>
+
+                </div>
+                <div class="modul_one">
+                    <div class="top_title">
+                        <span>加盟费用</span>
+                    </div>
+                    <div class="active">
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="message_body">
+                <div class="top_title">
+                    <i class="iconfont icon-liuyanfill"></i>
+                    <span>在线留言</span>
+                </div>
+                <div class="bottom_form">
+                    <form action="">
+                        <div class="input_one">
+                            <span>姓名：</span>
+                            <input type="text " value="请输入您的姓名" onfocus="if(this.value =='请输入您的姓名')this.value=''"
+                                   onblur="if(this.value==''){ this.value ='请输入您的姓名'} ">
+                        </div>
+                        <div class="input_one">
+                            <span>电话：</span>
+                            <input type="text " value="请输入您的电话" onfocus="if(this.value =='请输入您的电话')this.value=''"
+                                   onblur="if(this.value==''){ this.value ='请输入您的电话'} ">
+                        </div>
+                        <div class="input_one">
+                            <span>留言：</span>
+                            <textarea placeholder="对此项目感兴趣，请给我们留言"></textarea>
+                        </div>
+
+                        <div class="input_two">
+                            <input type="checkbox" checked>
+                            <span>意向品牌查看（我已同意成为聚商机会员，并遵守聚商机会员条款）</span>
+                        </div>
+                        <div class="input_two">
+                            <input type="checkbox" checked>
+                            <span>同类品牌商查看（我已同意成为聚商机会员，并遵守聚商机会员条款）</span>
+                        </div>
+                        <div class="sub">
+                            <input type="submit" name="" id="" value="提交">
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            <div class="active_rec">
+                <div class="top_title">
+                        <span>
+                            相关推荐
+                        </span>
+                </div>
+                <div class="bottom_list">
+                    <ul>
+                        <li>
+                            <a href="">
+                                    <span>
+                                        重庆小面怎么加盟！重庆小面怎么加盟，重庆小面怎么加盟
+                                    </span>
+                                <span>
+                                        2019-02-02
+                                    </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                    <span>
+                                        重庆小面怎么加盟！重庆小面怎么加盟，重庆小面怎么加盟
+                                    </span>
+                                <span>
+                                        2019-02-02
+                                    </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                    <span>
+                                        重庆小面怎么加盟！重庆小面怎么加盟，重庆小面怎么加盟
+                                    </span>
+                                <span>
+                                        2019-02-02
+                                    </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                    <span>
+                                        重庆小面怎么加盟！重庆小面怎么加盟，重庆小面怎么加盟
+                                    </span>
+                                <span>
+                                        2019-02-02
+                                    </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                    <span>
+                                        重庆小面怎么加盟！重庆小面怎么加盟，重庆小面怎么加盟
+                                    </span>
+                                <span>
+                                        2019-02-02
+                                    </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="guessLike">
+                <div class="top_title">
+                        <span>
+                            猜你喜欢
+                        </span>
+                </div>
+                <div class="bottom_list">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <p><img src="./img/zil_13.png" alt=""></p>
+                                <p>重庆崽儿火锅</p>
+                                <p>重庆有力气有限公司</p>
+                                <p>￥3-8万</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p><img src="./img/zil_13.png" alt=""></p>
+                                <p>重庆崽儿火锅</p>
+                                <p>重庆有力气有限公司</p>
+                                <p>￥3-8万</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p><img src="./img/zil_13.png" alt=""></p>
+                                <p>重庆崽儿火锅</p>
+                                <p>重庆有力气有限公司</p>
+                                <p>￥3-8万</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p><img src="./img/zil_13.png" alt=""></p>
+                                <p>重庆崽儿火锅</p>
+                                <p>重庆有力气有限公司</p>
+                                <p>￥3-8万</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </dl>
+        <dl class="two">
+            <div class="pro_aT">
+                <div class="modul_one">
+                    <div class="top_title">
+                        <span>加盟详情</span>
+                    </div>
+                    <div class="people_comments">
+
+                        <ul>
+                            <li>
+                                <div class="top">
+                                    <span><img src="./img/zil_02.png" alt=""></span>
+                                    <span>一个丸子头&</span>
+                                    <span>2019-02-02</span>
+                                </div>
+                                <div class="bottom">
+                                    <p>这家店实话说一般！加盟它迟早的倒闭，这是我对你们的警告，可以不听。</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top">
+                                    <span><img src="./img/zil_02.png" alt=""></span>
+                                    <span>一个丸子头&</span>
+                                    <span>2019-02-02</span>
+                                </div>
+                                <div class="bottom">
+                                    <p>这家店实话说一般！加盟它迟早的倒闭，这是我对你们的警告，可以不听。</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top">
+                                    <span><img src="./img/zil_02.png" alt=""></span>
+                                    <span>一个丸子头&</span>
+                                    <span>2019-02-02</span>
+                                </div>
+                                <div class="bottom">
+                                    <p>这家店实话说一般！加盟它迟早的倒闭，这是我对你们的警告，可以不听。</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top">
+                                    <span><img src="./img/zil_02.png" alt=""></span>
+                                    <span>一个丸子头&</span>
+                                    <span>2019-02-02</span>
+                                </div>
+                                <div class="bottom">
+                                    <p>这家店实话说一般！加盟它迟早的倒闭，这是我对你们的警告，可以不听。</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top">
+                                    <span><img src="./img/zil_02.png" alt=""></span>
+                                    <span>一个丸子头&</span>
+                                    <span>2019-02-02</span>
+                                </div>
+                                <div class="bottom">
+                                    <p>这家店实话说一般！加盟它迟早的倒闭，这是我对你们的警告，可以不听。</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top">
+                                    <span><img src="./img/zil_02.png" alt=""></span>
+                                    <span>一个丸子头&</span>
+                                    <span>2019-02-02</span>
+                                </div>
+                                <div class="bottom">
+                                    <p>这家店实话说一般！加盟它迟早的倒闭，这是我对你们的警告，可以不听。</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top">
+                                    <span><img src="./img/zil_02.png" alt=""></span>
+                                    <span>一个丸子头&</span>
+                                    <span>2019-02-02</span>
+                                </div>
+                                <div class="bottom">
+                                    <p>这家店实话说一般！加盟它迟早的倒闭，这是我对你们的警告，可以不听。</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="top">
+                                    <span><img src="./img/zil_02.png" alt=""></span>
+                                    <span>一个丸子头&</span>
+                                    <span>2019-02-02</span>
+                                </div>
+                                <div class="bottom">
+                                    <p>这家店实话说一般！加盟它迟早的倒闭，这是我对你们的警告，可以不听。</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="click_more">
+                            <span>查看更多</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </dl>
+    </div>
+</div>
+
+<!--底部-->
+<div class="footers">
+    <div class="footerMenu">
+        <a href="">
+            首页
+        </a>
+        <a href="">
+            关于我们
+        </a>
+        <a href="">
+            联系我们
+        </a>
+        <a href="">
+            创业项目
+        </a>
+    </div>
+    <div class="p">
+        <p>315加盟网 渝ICP备17011668号-1</p>
+        <p>版权所有：重庆采采信息技术有限公司</p>
+        <p>公司地址：重庆渝北区中渝都会首站</p>
+        <p>服务热线：023-81986903</p>
+        <p>创业有风险、选择需谨慎</p>
+    </div>
+</div>
+<!--底部-->
+
+<div id="bottomMessagebox">
+    <!--底部浮动留言框-->
+    <div class="bottomMssage">
+        <div class="messageLeft" @click="bottomMessageTwo">
+            <img src="img/messageOne.png" alt="">
+            <span>留言</span>
+        </div>
+        <div class="messageLeft" onclick="_53App.talk('chat','');">
+            <img src="img/kehuOne.png" alt="">
+            <span>咨询</span>
+        </div>
+
+        <div class="rightPhone" @click="bottomDial">
+            <img src="img/phoneThree.png" alt="">
+        </div>
+
+
+    </div>
+    <!--底部浮动留言框-->
+
+<!--    隐藏的留言框-->
+    <div class="overMessage">
+          <div class="box">
+              <div class="close">
+                  <span @click="bottomMessageTwo" class="mui-icon mui-icon-closeempty"></span>
+              </div>
+              <div class="head">
+
+                  <span>请留言，我们会尽快处理</span>
+              </div>
+              <form action="">
+                  <div class="one">
+                      <input type="text" placeholder="请输入姓名（如李先生）">
+                  </div>
+                  <div class="one">
+                      <input type="text" placeholder="请输入电话号码（我们严格保密）">
+                  </div>
+                  <div class="two">
+                      <textarea placeholder="请输入留言信息">
+
+                      </textarea>
+                  </div>
+                  <div class="checkbox">
+                      <input type="checkbox" checked>
+                      <em>我已阅读并同意 <a href="">《聚商机加盟网服务条款》</a></em>
+                  </div>
+                  <div class="sub">
+                      <button>提交</button>
+                  </div>
+              </form>
+          </div>
+    </div>
+<!-- 隐藏的留言框-->
+
+    <!--收集电话号码-->
+    <div class="collectPhone">
+        <div class="box">
+            <div class="close">
+                <span @click="bottomDial" class="mui-icon mui-icon-closeempty"></span>
+            </div>
+            <div class="head">
+                <img src="img/bottomkefu.png" alt="">
+                <span>提交后招商经理立即给你回拨</span>
+            </div>
+            <form action="">
+                <div class="one">
+                    <input type="text" placeholder="请输入您的电话号码">
+                </div>
+                <div class="sub">
+                    <button>点击免费通话</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--收集电话号码-->
+</div>
+
+<script src="./js/index.js"></script>
+<script>
+    var indexbanner = new Swiper('#banner', { ///// banner js 模块
+        autoplay: {
+            delay: 4500,
+            disableOnInteraction: false, // false鼠标移入移除后自动切换不会停止
+        },
+        loop: true, // 循环模式选项
+
+        // 如果需要分页器
+        pagination: {
+            el: '.project-swiper',
+            type: 'fraction',
+        },
+
+    });
+    mui.init();
+    $(function () {
+        $("img.lazy").lazyload({
+            threshold: 200,
+        });
+    });
+    new Vue({
+        el: '#header',
+        data: {
+            proHeaderShow: true,
+
+        },
+        mounted() {
+            window.addEventListener('scroll', this.offsettop);
+        },
+        destroyed() {
+            window.removeEventListener('scroll', this.handleScroll)
+        },
+
+        methods: {
+            offsettop() {
+                let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body
+                    .scrollTop;
+                if (scrollTop > 100) {
+                    this.proHeaderShow = false
+
+                } else {
+                    this.proHeaderShow = true
+                }
+            }
+        },
+    })
+    new Vue({
+        el:'#bottomMessagebox',
+        data: {
+            dial:false,
+            messageTwo:false
+        },
+        methods: {
+            bottomDial(){
+                let collectPhone = document.getElementsByClassName('collectPhone')[0];
+                if (!this.dial){
+                    this.dial = true;
+                    collectPhone.style.display = "block"
+
+                }else {
+                    this.dial = false;
+                    collectPhone.style.display = "none"
+                }
+            },
+            bottomMessageTwo(){
+                let overMessage = document.getElementsByClassName('overMessage')[0];
+                if (!this.messageTwo){
+                    this.messageTwo = true;
+                    overMessage.style.display = "block"
+
+                }else {
+                    this.messageTwo = false;
+                    overMessage.style.display = "none"
+                }
+            }
+        }
+
+    })
+</script>
+</body>
+
+</html>

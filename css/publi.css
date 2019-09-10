@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Microsoft YaHei";
+  font-family: "微软雅黑";
+}
+html,
+body {
+  max-width: 640px;
+  margin: 0 auto;
+  background: #ffffff;
+}
+a {
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/*# sourceMappingURL=publi.css.map */

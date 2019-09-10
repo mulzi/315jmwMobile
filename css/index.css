@@ -1,0 +1,892 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Microsoft YaHei";
+  font-family: "微软雅黑";
+}
+html,
+body {
+  max-width: 640px;
+  margin: 0 auto;
+  background: #ffffff;
+}
+a {
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.indexHeader {
+  background: #f14b3f;
+  height: 60px;
+  width: 100%;
+  display: flex;
+}
+.indexHeader .Logo {
+  width: 100px;
+  height: 34px;
+  margin: 13px;
+}
+.indexHeader .Logo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.indexHeader .indexSearch {
+  flex: 1;
+  height: 40px;
+  margin: 10px 20px 10px 0;
+  overflow: hidden;
+}
+.indexHeader .indexSearch form {
+  width: 100%;
+  height: 100%;
+}
+.indexHeader .indexSearch form .box {
+  border-radius: 20px;
+  background: #ffffff;
+  overflow: hidden;
+  width: 100%;
+  height: 40px;
+  box-sizing: border-box;
+  display: flex;
+  vertical-align: center;
+  justify-items: center;
+}
+.indexHeader .indexSearch form .box i {
+  width: 30px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  color: #999999;
+  display: block;
+  margin: 0 5px 0 10px;
+}
+.indexHeader .indexSearch form .box input {
+  outline: none;
+  background: transparent;
+  border: none;
+  height: 40px;
+  line-height: 40px;
+  color: #333333;
+  font-size: 14px;
+  display: block;
+  overflow: hidden;
+  margin-right: 8px;
+}
+.indexHeader .rightMenu {
+  width: 40px;
+  height: 60px;
+  line-height: 60px;
+  margin-right: 10px;
+}
+.indexHeader .rightMenu a {
+  display: block;
+  color: #ffffff;
+  font-size: 34px;
+}
+.index_banner {
+  width: 100%;
+}
+.index_banner .swiper-container .swiper-wrapper {
+  width: 100%;
+}
+.index_banner .swiper-container .swiper-wrapper a {
+  display: block;
+  width: 100%;
+  height: 220px;
+}
+.index_banner .swiper-container .swiper-wrapper a img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 320px) and (max-width: 370px) {
+  .index_banner .swiper-container .swiper-wrapper a {
+    height: 190px;
+  }
+}
+@media screen and (min-width: 420px) and (max-width: 500px) {
+  .index_banner .swiper-container .swiper-wrapper a {
+    height: 280px;
+  }
+}
+@media screen and (min-width: 501px) {
+  .index_banner .swiper-container .swiper-wrapper a {
+    height: 340px;
+  }
+}
+.index_menu {
+  width: 100%;
+  padding: 20px 0;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+.index_menu ul {
+  width: 100%;
+}
+.index_menu ul::after {
+  clear: both;
+  display: block;
+  visibility: hidden;
+  height: 0;
+  content: "";
+}
+.index_menu ul li {
+  float: left;
+  width: 14%;
+  margin: 8px 3%;
+}
+.index_menu ul li a {
+  width: 100%;
+  display: block;
+}
+.index_menu ul li a > .ico_top {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  background: linear-gradient(180deg, #fe6f4d, #f3ab80);
+  border-radius: 50%;
+  overflow: hidden;
+}
+.index_menu ul li a > .ico_top > span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+.index_menu ul li a > .ico_top > span img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.index_menu ul li a p {
+  text-align: center;
+  line-height: 26px;
+  overflow: hidden;
+  height: 26px;
+  font-size: 0.32rem;
+  color: #333;
+}
+.indexNewsPro {
+  width: 100%;
+  display: flex;
+  background: #f3f3f3;
+  height: 28px;
+}
+.indexNewsPro .leftImg {
+  width: 28px;
+  height: 28px;
+  margin: 0 10px;
+}
+.indexNewsPro .leftImg img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.indexNewsPro .title {
+  width: 80px;
+  line-height: 28px;
+  height: 28px;
+  color: red;
+  text-align: center;
+  font-size: 14px;
+}
+.indexNewsPro .upRunNews {
+  flex: 1;
+  overflow: hidden;
+  margin: 0 8px;
+  height: 28px;
+  line-height: 28px;
+}
+.indexNewsPro .upRunNews .box {
+  height: 28px;
+  width: 100%;
+}
+.indexNewsPro .upRunNews .box a {
+  display: block;
+  height: 28px;
+  line-height: 28px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 13px;
+  color: #333333;
+  font-weight: bold;
+}
+.indexTwoPro {
+  width: 92%;
+  overflow: hidden;
+  margin: 10px auto 0;
+}
+.indexTwoPro .box {
+  width: 100%;
+  overflow: hidden;
+}
+.indexTwoPro .box .swiper-wrapper {
+  width: 100%;
+}
+.indexTwoPro .box .swiper-wrapper a {
+  width: 50%;
+  float: left;
+  display: block;
+}
+.indexTwoPro .box .swiper-wrapper a p {
+  width: 90%;
+  margin: 0 auto;
+}
+.indexTwoPro .box .swiper-wrapper a p:nth-child(1) {
+  height: 100px;
+}
+.indexTwoPro .box .swiper-wrapper a p:nth-child(1) img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.indexTwoPro .box .swiper-wrapper a p:nth-child(2) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: 20px;
+  line-height: 20px;
+  color: #616161;
+  font-size: 14px;
+  font-weight: bold;
+}
+.indexTwoPro .box .swiper-wrapper a p:nth-child(3) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: 20px;
+  line-height: 20px;
+  color: #999999;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+.indexSixPro {
+  width: 100%;
+  margin-top: 14px;
+  overflow: hidden;
+}
+.indexSixPro .topTitle {
+  height: 42px;
+  line-height: 42px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  background: #f4f4f4;
+  position: relative;
+}
+.indexSixPro .topTitle .title {
+  flex: 1;
+  overflow: hidden;
+  color: #104cff;
+  font-size: 16px;
+  text-align: center;
+  transition: 1s ease-in-out;
+}
+.indexSixPro .topTitle .right {
+  text-align: center;
+  line-height: 42px;
+  width: 80px;
+  display: block;
+  position: absolute;
+  right: 0;
+}
+.indexSixPro .topTitle .right i {
+  font-size: 24px;
+  vertical-align: middle;
+  display: inline-block;
+}
+.indexSixPro .topTitle .right span {
+  color: #333333;
+  font-size: 12px;
+  vertical-align: middle;
+  display: inline-block;
+}
+.indexSixPro .bottomNewsList {
+  width: 100%;
+}
+.indexSixPro .bottomNewsList a {
+  height: 34px;
+  line-height: 34px;
+  border-bottom: 1px solid #f2f2f2;
+  display: block;
+  padding: 4px 0;
+}
+.indexSixPro .bottomNewsList a span {
+  height: 34px;
+  line-height: 34px;
+  display: inline-block;
+  font-size: 14px;
+  color: #ff9315;
+  vertical-align: middle;
+}
+.indexSixPro .bottomNewsList a em {
+  margin-right: 16px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: 34px;
+  line-height: 34px;
+  font-size: 13px;
+  color: #666666;
+  vertical-align: middle;
+  font-style: normal;
+}
+.indexSixPro .bottomNewsList a::before {
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+  background: url("../img/1.png") no-repeat;
+  background-size: cover;
+  margin-left: 20px;
+}
+.indexSixPro .bottomNewsList a:nth-child(2)::before {
+  background: url("../img/2.png") no-repeat;
+  background-size: cover;
+}
+.indexSixPro .bottomNewsList a:nth-child(3)::before {
+  background: url("../img/3.png") no-repeat;
+  background-size: cover;
+}
+.indexSixPro .bottomNewsList a:nth-child(4)::before {
+  background: url("../img/4.png") no-repeat;
+  background-size: cover;
+}
+.indexSixPro .bottomNewsList a:nth-child(5)::before {
+  background: url("../img/5.png") no-repeat;
+  background-size: cover;
+}
+.indexSixPro .bottomNewsList a:nth-child(6)::before {
+  background: url("../img/6.png") no-repeat;
+  background-size: cover;
+}
+.indexSixPro .bottomProList {
+  width: 100%;
+  overflow: hidden;
+}
+.indexSixPro .bottomProList a {
+  width: 100%;
+  border-bottom: 1px solid #f2f2f2;
+  display: flex;
+  padding: 18px 0;
+}
+.indexSixPro .bottomProList a .leftImg {
+  width: 130px;
+  height: 100px;
+  margin-left: 10px;
+}
+.indexSixPro .bottomProList a .leftImg img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.indexSixPro .bottomProList a .rightName {
+  flex: 1;
+  overflow: hidden;
+  margin: 0 10px;
+}
+.indexSixPro .bottomProList a .rightName p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: 20px;
+  line-height: 20px;
+}
+.indexSixPro .bottomProList a .rightName p em {
+  color: red;
+  font-size: 14px;
+  font-style: normal;
+}
+.indexSixPro .bottomProList a .rightName p i {
+  color: #1ed1d0;
+  font-style: normal;
+}
+.indexSixPro .bottomProList a .rightName p:nth-child(1) {
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333;
+}
+.indexSixPro .bottomProList a .rightName p:nth-child(2) {
+  font-size: 12px;
+  color: #777777;
+}
+.indexSixPro .bottomProList a .rightName p:nth-child(3) {
+  font-size: 12px;
+  color: #777777;
+}
+.indexSixPro .bottomProList a .rightName p:nth-child(4) {
+  font-size: 12px;
+  color: #777777;
+}
+.indexSixPro .bottomProList a .rightName .li {
+  height: 24px;
+  line-height: 24px;
+  overflow: hidden;
+}
+.indexSixPro .bottomProList a .rightName .li li {
+  border-radius: 10px;
+  height: 20px;
+  line-height: 20px;
+  display: inline-block;
+  border: 1px solid red;
+  color: red;
+  font-size: 12px;
+  padding: 0 8px;
+  margin-right: 4px;
+}
+.indexSixPro .clickMore {
+  height: 60px;
+  line-height: 60px;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  color: #777777;
+}
+.indexSixPro .clickMore span {
+  vertical-align: middle;
+}
+.indexSixPro .clickMore i {
+  font-size: 16px;
+  vertical-align: middle;
+}
+.indexOneClass {
+  width: 100%;
+  border-top: 4px solid #f2f2f2;
+  border-bottom: 8px solid #f2f2f2;
+}
+.indexOneClass .box {
+  width: 94%;
+  margin: 14px auto;
+  overflow: hidden;
+}
+.indexOneClass .box a {
+  display: inline-block;
+  float: left;
+  border-radius: 4px;
+  padding: 4px 10px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  font-size: 13px;
+  color: #ff7400;
+  border: 1px solid #ff7400;
+}
+.indexOneClass .box a:nth-child(2n) {
+  color: #1cf0ff;
+  border: 1px solid #1cf0ff;
+}
+.indexOneClass .box a:nth-child(3n) {
+  color: #ff0000;
+  border: 1px solid #ff0000;
+}
+.indexOneClass .box a:nth-child(4n) {
+  color: #22ff1e;
+  border: 1px solid #22ff1e;
+}
+.indexOneClass .box a:nth-child(5n) {
+  color: #ff14ed;
+  border: 1px solid #ff14ed;
+}
+.footers {
+  width: 100%;
+  background: #f14b3f;
+  overflow: hidden;
+}
+.footers .footerMenu {
+  width: 90%;
+  margin: 20px auto 10px;
+  overflow: hidden;
+}
+.footers .footerMenu a {
+  float: left;
+  width: 20%;
+  height: 26px;
+  line-height: 26px;
+  background: rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  text-align: center;
+  font-size: 13px;
+  margin: 0 2.5%;
+}
+.footers .p {
+  width: 90%;
+  margin: 0 auto 60px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 12px;
+}
+.footers .p p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 4px;
+  color: #ffffff;
+}
+.headerOne {
+  width: 100%;
+  max-width: 640px;
+  line-height: 50px;
+  height: 50px;
+  background: #f14b3f;
+  display: flex;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+}
+.headerOne .block {
+  width: 50px;
+  height: 50px;
+}
+.headerOne .block a {
+  line-height: 50px;
+  display: block;
+  height: 50px;
+  width: 50px;
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+}
+.headerOne .logo {
+  flex: 1;
+  margin-right: 50px;
+}
+.headerOne .logo .box {
+  margin: 8px auto;
+  height: 34px;
+  width: 120px;
+}
+.headerOne .logo .box img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.marginTop50 {
+  margin-top: 50px;
+}
+.mvBox {
+  height: 6rem;
+}
+.mvBox video {
+  height: 6rem;
+  width: 100%;
+  display: block;
+}
+.bodyBox {
+  width: 100%;
+}
+.bodyBox > .searchBoxTop {
+  width: 100%;
+  height: 46px;
+  line-height: 46px;
+  text-align: center;
+  font-size: 13px;
+  color: red;
+  border-bottom: 2px solid #f2f2f2;
+}
+.bodyBox .classFour {
+  width: 100%;
+}
+.bodyBox .classFour table {
+  width: 100%;
+  border-left: 1px solid #e1e1e1;
+  border-top: 1px solid #e1e1e1;
+}
+.bodyBox .classFour table tr {
+  width: 100%;
+}
+.bodyBox .classFour table tr td {
+  width: 25%;
+  box-sizing: border-box;
+  border-right: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  position: relative;
+}
+.bodyBox .classFour table tr td a {
+  display: block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  color: #333333;
+  font-size: 14px;
+  text-align: center;
+}
+.bodyBox .classFour table tr td.active::before {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: red;
+  position: absolute;
+  bottom: 0;
+}
+.bodyBox .classFour table tr td.active::after {
+  content: "";
+  height: 0;
+  border: 7px solid transparent;
+  border-bottom-color: red;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 7px);
+}
+.bodyBox > .bottomProList {
+  border-top: 12px solid #f2f2f2;
+  border-bottom: 20px solid #f2f2f2;
+  overflow: hidden;
+}
+.bodyBox > .bottomProList > a {
+  display: block;
+  border-bottom: 1px solid #f2f2f2;
+}
+.bodyBox > .bottomProList > a > .box {
+  width: 92%;
+  margin: 20px auto;
+  display: flex;
+}
+.bodyBox > .bottomProList > a > .box .leftImg {
+  width: 120px;
+  height: 90px;
+  border-radius: 2px;
+  overflow: hidden;
+}
+.bodyBox > .bottomProList > a > .box .leftImg img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.bodyBox > .bottomProList > a > .box .rightName {
+  flex: 1;
+  margin-left: 10px;
+  overflow: hidden;
+}
+.bodyBox > .bottomProList > a > .box .rightName .title {
+  height: 26px;
+  line-height: 26px;
+  display: flex;
+}
+.bodyBox > .bottomProList > a > .box .rightName .title span {
+  flex: 1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 16px;
+  color: #333333;
+  font-weight: bold;
+}
+.bodyBox > .bottomProList > a > .box .rightName .title em {
+  width: 14px;
+  height: 14px;
+  margin-top: 6px;
+}
+.bodyBox > .bottomProList > a > .box .rightName .title em img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.bodyBox > .bottomProList > a > .box .rightName .p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 13px;
+  color: #666666;
+  height: 20px;
+  line-height: 20px;
+}
+.bodyBox > .bottomProList > a > .box .rightName .p em {
+  color: #1ed1d0;
+  font-weight: bold;
+  font-style: normal;
+}
+.bodyBox > .bottomProList > a > .box .rightName .dir {
+  display: flex;
+}
+.bodyBox > .bottomProList > a > .box .rightName .dir span {
+  flex: 1;
+  overflow: hidden;
+  height: 20px;
+  line-height: 20px;
+  font-size: 13px;
+  color: #666666;
+}
+.bodyBox > .bottomProList > a > .box .rightName .dir em {
+  height: 20px;
+  line-height: 18px;
+  border: 1px solid #039cd1;
+  color: #039cd1;
+  padding: 0 6px ;
+  border-radius: 3px;
+  font-style: normal;
+  font-size: 11px;
+  box-sizing: border-box;
+}
+.bodyBox .nextBox {
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 10px solid #f2f2f2;
+}
+.bodyBox .nextBox .box {
+  width: 92%;
+  margin: 16px auto;
+  display: flex;
+}
+.bodyBox .nextBox .box a {
+  width: 70px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 5px;
+  border: 1px solid #cfcfcf;
+  text-align: center;
+  font-size: 11px;
+  color: #999999;
+}
+.bodyBox .nextBox .box p {
+  flex: 1;
+  text-align: center;
+  font-size: 11px;
+  color: #999999;
+  height: 30px;
+  line-height: 30px;
+}
+.bodyBox .watchings {
+  width: 100%;
+}
+.bodyBox .watchings .toptitle {
+  display: flex;
+  border-bottom: 1px solid #f2f2f2;
+}
+.bodyBox .watchings .toptitle span {
+  flex: 1;
+  border-left: 3px solid red;
+  height: 16px;
+  line-height: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-indent: 1em;
+  margin: 16px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.bodyBox .watchings .toptitle em {
+  height: 16px;
+  line-height: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-indent: 1em;
+  margin: 16px;
+  width: 60px;
+  text-align: center;
+  font-size: 12px;
+  color: #999999;
+  font-style: normal;
+}
+.bodyBox .watchings .fourList {
+  width: 100%;
+}
+.bodyBox .watchings .fourList a {
+  border-bottom: dashed 1px #f2f2f2;
+  display: flex;
+}
+.bodyBox .watchings .fourList a:last-child {
+  border-bottom: none;
+}
+.bodyBox .watchings .fourList a span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1;
+  margin: 10px 16px;
+  font-size: 14px;
+  color: #333333;
+  height: 20px;
+  line-height: 20px;
+}
+.bodyBox .watchings .fourList a span em {
+  color: red;
+  font-style: normal;
+}
+.bodyBox .watchings .fourList a i {
+  height: 20px;
+  line-height: 20px;
+  color: #999999;
+  font-style: normal;
+  font-size: 12px;
+  width: 60px;
+  margin: 10px 16px 0 0;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.bodyBox .watchings .threeList {
+  overflow: hidden;
+  width: 92%;
+  margin: 14px auto;
+}
+.bodyBox .watchings .threeList a {
+  float: left;
+  width: 29.333%;
+  margin: 0 2%;
+  display: block;
+}
+.bodyBox .watchings .threeList a p:nth-child(1) {
+  height: 80px;
+  width: 100%;
+}
+.bodyBox .watchings .threeList a p:nth-child(1) img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.bodyBox .watchings .threeList a p:nth-child(2) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 12px;
+  color: #333333;
+  height: 20px;
+  line-height: 20px;
+}
+.toHeader {
+  width: 34px;
+  border-radius: 17px;
+  border: 1px solid #d4d4d4;
+  position: fixed;
+  right: 10px;
+  bottom: 160px;
+  z-index: 7;
+  box-shadow: 0 2px 30px #e4e4e4;
+  background: rgba(255, 255, 255, 0.8);
+}
+.toHeader a {
+  display: block;
+  width: 100%;
+  margin: 10px 0 0;
+}
+.toHeader a img {
+  width: 18px;
+  height: 18px;
+  display: block;
+  margin: 0 auto;
+}
+.toHeader a span {
+  width: 100%;
+  font-size: 12px;
+  color: #555555;
+  display: block;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+}
+.toHeader a:last-child {
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=index.css.map */
